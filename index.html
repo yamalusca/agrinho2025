@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campo & Cidade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #fefefe;
+      color: #222;
+    }
+
+    header {
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      color: #2f6f3e;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2f6f3e;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, #e6ffda, #fffbb5);
+      padding: 120px 20px 60px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #2f6f3e;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      color: #2f6f3e;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .img-round {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fcd603;
+    }
+
+    .img-round img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #2f6f3e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    /* Texturas (simples riscos/formas com pseudo elementos) */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 1px, transparent 1px),
+                        radial-gradient(circle at 80% 80%, rgba(0,0,0,0.02) 2px, transparent 2px);
+      background-size: 100px 100px;
+      z-index: -1;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Campo&Cidade</h1>
+    <nav>
+      <a href="#integracao">Integração</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#infraestrutura">Infraestrutura</a>
+      <a href="#sustentabilidade">Sustentabilidade</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Campo e cidade juntos por um futuro melhor</h2>
+    <p>Explorando a importância dessa relação para o desenvolvimento sustentável.</p>
+  </section>
+
+  <section id="integracao">
+    <h3>Integração Econômica e Geração de Renda</h3>
+    <div class="content">
+      <div class="text">
+        <p>A relação entre campo e cidade é essencial para o crescimento econômico de uma região. O campo fornece alimentos, matérias-primas e produtos fundamentais para as cidades, enquanto os centros urbanos oferecem mercados, serviços e tecnologias. Essa troca movimenta a economia e reduz desigualdades.</p>
+      </div>
+      <div class="img-round"><img src="campo.jpeg" alt="Integração"></div>
+    </div>
+  </section>
+
+  <section id="tecnologia">
+    <h3>Acesso a Novas Tecnologias no Campo</h3>
+    <div class="content">
+      <div class="img-round"><img src="tecnologias.jpeg" alt="Tecnologia"></div>
+      <div class="text">
+        <p>Com o avanço da comunicação, agricultores têm acesso a máquinas modernas, previsão do tempo, irrigação inteligente e cursos online. Isso aumenta a produtividade, ajuda a agricultura familiar e atrai jovens ao campo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cultura">
+    <h3>Valorização da Cultura e das Tradições Rurais</h3>
+    <div class="content">
+      <div class="text">
+        <p>Festas típicas, culinária, artesanato e saberes tradicionais ganham destaque nas cidades por meio de feiras, turismo rural e produtos locais. Isso fortalece a identidade das comunidades e gera renda cultural.</p>
+      </div>
+      <div class="img-round"><img src="cultura.jpeg" alt="Cultura Rural"></div>
+    </div>
+  </section>
+
+  <section id="infraestrutura">
+    <h3>Desenvolvimento da Infraestrutura Rural</h3>
+    <div class="content">
+      <div class="img-round"><img src="estradas.jpeg" alt="Infraestrutura"></div>
+      <div class="text">
+        <p>A melhoria de estradas, acesso à internet e energia elétrica favorece o comércio, saúde, educação e qualidade de vida no campo. Isso evita a migração forçada e promove dignidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sustentabilidade">
+    <h3>Cooperação para Sustentabilidade e Qualidade de Vida</h3>
+    <div class="content">
+      <div class="text">
+        <p>A busca por uma vida sustentável fortalece os laços com o campo. Agricultura orgânica, feiras locais e consumo consciente beneficiam o meio ambiente e a economia rural.</p>
+      </div>
+      <div class="img-round"><img src="feiras.jpeg" alt="Sustentabilidade"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Campo&Cidade por Yamafuku
+    </p>
+  </footer>
+</body>
+</html>
